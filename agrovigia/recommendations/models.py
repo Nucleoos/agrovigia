@@ -6,10 +6,10 @@ from vegetables.models import Vegetable
 
 
 class Recommendation(models.Model):
-    vegetable_id = models.ForeignKey(Vegetable)
-    min_temp = models.IntegerField()
-    max_temp = models.IntegerField()
+    vegetable = models.ForeignKey(Vegetable)
+    min_temp = models.FloatField()
+    max_temp = models.FloatField()
     message = models.TextField(blank=False)
 
     def __unicode__(self):
-        return self.vegetable_id.name
+        return self.vegetable.name
