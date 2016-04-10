@@ -1,6 +1,4 @@
 local_settings.py
-agrovigio/settings.py
-*settings.py
 .project
 .pydevproject
 .settings/
